@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/val/ros2_ws/build/in424_nav",
+        "/home/val/ros2_ws/install/in424_nav/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/val/ros2_ws/build/in424_nav",
+        "/home/val/ros2_ws/install/in424_nav/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages"
+    ]
+}

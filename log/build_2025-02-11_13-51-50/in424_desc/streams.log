@@ -1,0 +1,52 @@
+[0.107s] Invoking command in '/home/val/ros2_ws/build/in424_desc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_desc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_desc
+[0.671s] -- The C compiler identification is GNU 9.4.0
+[0.772s] -- The CXX compiler identification is GNU 9.4.0
+[0.796s] -- Check for working C compiler: /usr/bin/cc
+[0.979s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.985s] -- Detecting C compiler ABI info
+[1.160s] -- Detecting C compiler ABI info - done
+[1.187s] -- Detecting C compile features
+[1.188s] -- Detecting C compile features - done
+[1.194s] -- Check for working CXX compiler: /usr/bin/c++
+[1.379s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.382s] -- Detecting CXX compiler ABI info
+[1.574s] -- Detecting CXX compiler ABI info - done
+[1.593s] -- Detecting CXX compile features
+[1.594s] -- Detecting CXX compile features - done
+[1.601s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.669s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.670s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.822s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.911s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[2.124s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.133s] -- Added test 'lint_cmake' to check CMake code style
+[2.140s] -- Added test 'xmllint' to check XML markup files
+[2.149s] -- Configuring done
+[2.154s] -- Generating done
+[2.160s] -- Build files have been written to: /home/val/ros2_ws/build/in424_desc
+[2.176s] Invoked command in '/home/val/ros2_ws/build/in424_desc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_desc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_desc
+[2.178s] Invoking command in '/home/val/ros2_ws/build/in424_desc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_desc -- -j5 -l5
+[2.281s] Invoked command in '/home/val/ros2_ws/build/in424_desc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_desc -- -j5 -l5
+[2.306s] Invoking command in '/home/val/ros2_ws/build/in424_desc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_desc
+[2.324s] -- Install configuration: ""
+[2.325s] -- Execute custom install script
+[2.326s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/xacro/macro.xacro
+[2.346s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/xacro/materials.xacro
+[2.367s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/xacro/robot.gazebo
+[2.392s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/xacro/robot.xacro
+[2.414s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/ament_index/resource_index/package_run_dependencies/in424_desc
+[2.436s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/ament_index/resource_index/parent_prefix_path/in424_desc
+[2.457s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/environment/ament_prefix_path.sh
+[2.479s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/environment/ament_prefix_path.dsv
+[2.500s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/environment/path.sh
+[2.521s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/environment/path.dsv
+[2.541s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/local_setup.bash
+[2.560s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/local_setup.sh
+[2.580s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/local_setup.zsh
+[2.600s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/local_setup.dsv
+[2.620s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/package.dsv
+[2.641s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/ament_index/resource_index/packages/in424_desc
+[2.663s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/cmake/in424_descConfig.cmake
+[2.683s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/cmake/in424_descConfig-version.cmake
+[2.702s] -- Symlinking: /home/val/ros2_ws/install/in424_desc/share/in424_desc/package.xml
+[2.734s] Invoked command in '/home/val/ros2_ws/build/in424_desc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_desc

@@ -1,0 +1,15 @@
+/home/val/ros2_ws/install/in424_msgs/share/ament_index/resource_index/package_run_dependencies/in424_msgs
+/home/val/ros2_ws/install/in424_msgs/share/ament_index/resource_index/parent_prefix_path/in424_msgs
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/environment/ament_prefix_path.sh
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/environment/ament_prefix_path.dsv
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/environment/path.sh
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/environment/path.dsv
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/local_setup.bash
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/local_setup.sh
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/local_setup.zsh
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/local_setup.dsv
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/package.dsv
+/home/val/ros2_ws/install/in424_msgs/share/ament_index/resource_index/packages/in424_msgs
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/cmake/in424_msgsConfig.cmake
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/cmake/in424_msgsConfig-version.cmake
+/home/val/ros2_ws/install/in424_msgs/share/in424_msgs/package.xml

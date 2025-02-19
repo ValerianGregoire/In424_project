@@ -1,0 +1,60 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/val/ros2_ws/build/in424_simu
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/launch/spawn_robots_launch.py
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/launch/start_world_launch.py
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/worlds/env.world
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_1_1/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_1_1/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_2_2/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_2_2/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_3_2/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_3_2/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/small_cube/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/small_cube/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls_2/model.config
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls_2/model.sdf
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cfg/config.rviz
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/package_run_dependencies/in424_simu
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/parent_prefix_path/in424_simu
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/ament_prefix_path.sh
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/ament_prefix_path.dsv
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/path.sh
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/path.dsv
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.bash
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.sh
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.zsh
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.dsv
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/package.dsv
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/packages/in424_simu
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cmake/in424_simuConfig.cmake
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cmake/in424_simuConfig-version.cmake
+-- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/package.xml

@@ -1,0 +1,4 @@
+source;share/in424_desc/local_setup.bash
+source;share/in424_desc/local_setup.dsv
+source;share/in424_desc/local_setup.sh
+source;share/in424_desc/local_setup.zsh

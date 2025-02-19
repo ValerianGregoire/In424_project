@@ -1,0 +1,1 @@
+/home/val/ros2_ws/build/in424_simu/ament_cmake_core/in424_simuConfig.cmake

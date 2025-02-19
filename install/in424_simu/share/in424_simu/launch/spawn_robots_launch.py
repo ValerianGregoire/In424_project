@@ -1,0 +1,1 @@
+/home/val/ros2_ws/src/IN424/in424_simu/launch/spawn_robots_launch.py

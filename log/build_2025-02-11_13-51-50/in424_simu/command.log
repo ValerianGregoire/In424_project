@@ -1,0 +1,6 @@
+Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_simu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_simu
+Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_simu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_simu
+Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_simu -- -j5 -l5
+Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_simu -- -j5 -l5
+Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_simu
+Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_simu

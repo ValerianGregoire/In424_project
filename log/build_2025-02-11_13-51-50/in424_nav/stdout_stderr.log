@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating in424_nav.egg-info
+writing in424_nav.egg-info/PKG-INFO
+writing dependency_links to in424_nav.egg-info/dependency_links.txt
+writing entry points to in424_nav.egg-info/entry_points.txt
+writing requirements to in424_nav.egg-info/requires.txt
+writing top-level names to in424_nav.egg-info/top_level.txt
+writing manifest file 'in424_nav.egg-info/SOURCES.txt'
+reading manifest file 'in424_nav.egg-info/SOURCES.txt'
+writing manifest file 'in424_nav.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/val/ros2_ws/install/in424_nav/lib/python3.8/site-packages/site.py
+Creating /home/val/ros2_ws/install/in424_nav/lib/python3.8/site-packages/in424-nav.egg-link (link to .)
+Installing agent script to /home/val/ros2_ws/install/in424_nav/lib/in424_nav
+Installing map_manager script to /home/val/ros2_ws/install/in424_nav/lib/in424_nav
+Installing tf_publishers script to /home/val/ros2_ws/install/in424_nav/lib/in424_nav
+
+Installed /home/val/ros2_ws/build/in424_nav
+running symlink_data
+creating /home/val/ros2_ws/install/in424_nav/share/ament_index
+creating /home/val/ros2_ws/install/in424_nav/share/ament_index/resource_index
+creating /home/val/ros2_ws/install/in424_nav/share/ament_index/resource_index/packages
+symbolically linking /home/val/ros2_ws/build/in424_nav/resource/in424_nav -> /home/val/ros2_ws/install/in424_nav/share/ament_index/resource_index/packages
+symbolically linking /home/val/ros2_ws/build/in424_nav/package.xml -> /home/val/ros2_ws/install/in424_nav/share/in424_nav
+symbolically linking /home/val/ros2_ws/build/in424_nav/launch/agents_launch.py -> /home/val/ros2_ws/install/in424_nav/share/in424_nav

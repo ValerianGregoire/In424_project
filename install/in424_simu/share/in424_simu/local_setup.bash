@@ -1,0 +1,1 @@
+/home/val/ros2_ws/build/in424_simu/ament_cmake_environment_hooks/local_setup.bash

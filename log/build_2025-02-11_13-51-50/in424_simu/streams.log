@@ -1,0 +1,66 @@
+[0.599s] Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_simu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_simu
+[0.752s] -- The C compiler identification is GNU 9.4.0
+[0.900s] -- The CXX compiler identification is GNU 9.4.0
+[0.911s] -- Check for working C compiler: /usr/bin/cc
+[1.083s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.085s] -- Detecting C compiler ABI info
+[1.249s] -- Detecting C compiler ABI info - done
+[1.276s] -- Detecting C compile features
+[1.277s] -- Detecting C compile features - done
+[1.283s] -- Check for working CXX compiler: /usr/bin/c++
+[1.481s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.483s] -- Detecting CXX compiler ABI info
+[1.680s] -- Detecting CXX compiler ABI info - done
+[1.707s] -- Detecting CXX compile features
+[1.709s] -- Detecting CXX compile features - done
+[1.714s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.779s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.779s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.902s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.949s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[2.125s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.140s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.141s] -- Added test 'lint_cmake' to check CMake code style
+[2.143s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.147s] -- Added test 'xmllint' to check XML markup files
+[2.154s] -- Configuring done
+[2.160s] -- Generating done
+[2.163s] -- Build files have been written to: /home/val/ros2_ws/build/in424_simu
+[2.172s] Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/val/ros2_ws/src/IN424/in424_simu -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/val/ros2_ws/install/in424_simu
+[2.179s] Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_simu -- -j5 -l5
+[2.271s] Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/val/ros2_ws/build/in424_simu -- -j5 -l5
+[2.273s] Invoking command in '/home/val/ros2_ws/build/in424_simu': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_simu
+[2.297s] -- Install configuration: ""
+[2.298s] -- Execute custom install script
+[2.299s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/launch/spawn_robots_launch.py
+[2.326s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/launch/start_world_launch.py
+[2.346s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/worlds/env.world
+[2.369s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_1_1/model.config
+[2.397s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_1_1/model.sdf
+[2.417s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_2_2/model.config
+[2.438s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_2_2/model.sdf
+[2.460s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_3_2/model.config
+[2.477s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/box_3_2/model.sdf
+[2.499s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/small_cube/model.config
+[2.518s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/small_cube/model.sdf
+[2.539s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls/model.config
+[2.558s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls/model.sdf
+[2.578s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls_2/model.config
+[2.597s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/models/walls_2/model.sdf
+[2.619s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cfg/config.rviz
+[2.638s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/package_run_dependencies/in424_simu
+[2.659s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/parent_prefix_path/in424_simu
+[2.679s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/ament_prefix_path.sh
+[2.699s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/ament_prefix_path.dsv
+[2.717s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/path.sh
+[2.738s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/environment/path.dsv
+[2.757s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.bash
+[2.778s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.sh
+[2.797s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.zsh
+[2.816s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/local_setup.dsv
+[2.835s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/package.dsv
+[2.853s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/ament_index/resource_index/packages/in424_simu
+[2.872s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cmake/in424_simuConfig.cmake
+[2.890s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/cmake/in424_simuConfig-version.cmake
+[2.907s] -- Symlinking: /home/val/ros2_ws/install/in424_simu/share/in424_simu/package.xml
+[2.929s] Invoked command in '/home/val/ros2_ws/build/in424_simu' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/val/ros2_ws/build/in424_simu
