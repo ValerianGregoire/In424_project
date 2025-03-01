@@ -75,7 +75,6 @@ class Agent(Node):
         self.env_size = self.get_parameter("env_size").value
         self.nb_agents = self.get_parameter("nb_agents").value
 
-
     def init_map(self):
         """ Initialize the map to share with others if it is bot_1 """
         self.map_msg = OccupancyGrid()
@@ -118,7 +117,6 @@ class Agent(Node):
         """
             Returns the coordinates in map coordinates of a grid cell
         """
-        
         # Goes from 0 to 20
         try:
             x = (i + 1) * self.map_msg.info.resolution
@@ -133,7 +131,6 @@ class Agent(Node):
         y = (y - self.env_size[1]/2) * -1
 
         return x, y
-
 
     def merged_map_cb(self, msg):
         """ 
@@ -244,6 +241,7 @@ class Agent(Node):
         """
         State machine to rotate towards/drive to a given row/col cell combination.
         """
+        # Convert the target row and column to world coordinates
         dest_x, dest_y = self.grid_to_coordinates(self.dest_row, self.dest_col)
         # self.get_logger().info(f"Target x: {dest_x}\nTarget y: {dest_y}")
 
@@ -255,6 +253,7 @@ class Agent(Node):
             return
         
         # Compute target angle using arctan2 (result is in [-pi, pi])
+        # Rows and cols are inverted in the world, so the angle is inverted too
         target_angle = np.arctan2(delta_y, delta_x)
         
         # Convert target_angle to [0, 2π)
@@ -290,10 +289,15 @@ class Agent(Node):
         # Do not touch (update current gridmap position data)
         self.row, self.col = self.coordinates_to_grid(self.x, self.y)
 
+        # ======================== UPDATE THIS SECTION ========================
+        # Make sure no empty values are passed to the algorithm
+        if None in (self.dest_row, self.dest_col):
+            self.dest_row = self.dest_col = 0
+
         # Update self.dest_row and self.dest_col
-        # if not self.dest_row or not self.dest_col:
-        #     self.dest_row, self.dest_col = self.row - 5, self.col + 1
-        self.dest_row = self.dest_col = 0
+
+
+        # =====================================================================
 
         # Do not touch (state machine for movement)
         self.move_to_dest()
