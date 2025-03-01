@@ -30,6 +30,7 @@ class Agent(Node):
         #initialize attributes
         self.agents_pose = [None]*self.nb_agents    #[(x_1, y_1), (x_2, y_2), (x_3, y_3)] if there are 3 agents
         self.x = self.y = self.yaw = None   #the pose of this specific agent running the node
+        self.row = self.col = self.dest_row = self.dest_col = None # Position of this agent in the gridmap
 
         # Lidar variables
         self.ranges = self.intensities = self.min_angle = self.max_angle = self.step = None # Lidar data
@@ -37,6 +38,7 @@ class Agent(Node):
         self.map_agent_pub = self.create_publisher(OccupancyGrid, f"/{self.ns}/map", 1) #publisher for agent's own map
         self.init_map()
 
+        # Movement variables
         self.init_movement()
 
         #Subscribe to agents' pose topic
@@ -111,6 +113,26 @@ class Agent(Node):
             return None, None
         
         return (grid_y, grid_x) # The grid inverts x and y
+
+    def grid_to_coordinates(self, i, j):
+        """
+            Returns the coordinates in map coordinates of a grid cell
+        """
+        
+        # Goes from 0 to 20
+        try:
+            x = (i + 1) * self.map_msg.info.resolution
+            y = (j + 1) * self.map_msg.info.resolution
+        except TypeError:
+            return None, None
+
+        # Adjust to go from -10 to 10
+        x -= self.env_size[0]/2
+
+        # Adjust to go from 10 to -10
+        y = (y - self.env_size[1]/2) * -1
+
+        return x, y
 
 
     def merged_map_cb(self, msg):
@@ -217,15 +239,64 @@ class Agent(Node):
     def init_movement(self):
         self.cmd_vel = Twist()
         self.map_msg.header.stamp = self.get_clock().now().to_msg()
+    
+    def move_to_dest(self):
+        """
+        State machine to rotate towards/drive to a given row/col cell combination.
+        """
+        dest_x, dest_y = self.grid_to_coordinates(self.dest_row, self.dest_col)
+        # self.get_logger().info(f"Target x: {dest_x}\nTarget y: {dest_y}")
+
+        # Calculate deltas
+        try:
+            delta_x = dest_x - self.x  # x-axis difference
+            delta_y = dest_y - self.y  # y-axis difference
+        except TypeError:
+            return
+        
+        # Compute target angle using arctan2 (result is in [-pi, pi])
+        target_angle = np.arctan2(delta_y, delta_x)
+        
+        # Convert target_angle to [0, 2π)
+        if target_angle < 0:
+            target_angle += 2 * np.pi
+
+        # Compute angle difference, ensuring it's within [-π, π]
+        angle_diff = (target_angle - self.yaw + np.pi) % (2 * np.pi) - np.pi
+
+        # Tuning parameters
+        angle_tolerance = 0.1  # Radians: acceptable angle error
+        speed = 1.0            # Linear speed
+        rotation_speed = 0.5   # Angular speed
+
+        # Stop if at the destination
+        if (self.row, self.col) == (self.dest_row, self.dest_col):
+            self.cmd_vel.linear.x = 0.0
+            self.cmd_vel.angular.z = 0.0
+        
+        # Move forward if facing the right direction
+        elif abs(angle_diff) < angle_tolerance:
+            self.cmd_vel.linear.x = speed
+            self.cmd_vel.angular.z = 0.0
+        
+        # Rotate towards target angle
+        else:
+            self.cmd_vel.linear.x = 0.0
+            self.cmd_vel.angular.z = rotation_speed * np.sign(angle_diff)
 
     def strategy(self):
         """ Decision and action layers """
 
-        # Move forward:
-        self.cmd_vel.linear.x = float(1)
+        # Do not touch (update current gridmap position data)
+        self.row, self.col = self.coordinates_to_grid(self.x, self.y)
 
-        # Rotate
-        self.cmd_vel.angular.z = float(1)
+        # Update self.dest_row and self.dest_col
+        # if not self.dest_row or not self.dest_col:
+        #     self.dest_row, self.dest_col = self.row - 5, self.col + 1
+        self.dest_row = self.dest_col = 0
+
+        # Do not touch (state machine for movement)
+        self.move_to_dest()
 
         # Publish command
         self.cmd_vel_pub.publish(self.cmd_vel)
